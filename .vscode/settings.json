@@ -1,5 +1,7 @@
 {
-    "cSpell.words": [
-        "tailwindcss"
-    ]
+  "cSpell.words": [
+    "tailwindcss"
+  ],
+  "editor.defaultFormatter": "rome.rome",
+  "editor.formatOnSave": true
 }
