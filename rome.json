@@ -5,5 +5,19 @@
     "rules": {
       "recommended": true
     }
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentSize": 2,
+    "lineWidth": 120
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "trailingComma": "all",
+      "semicolons": "always",
+      "quoteProperties": "preserve"
+    }
   }
 }
