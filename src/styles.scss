@@ -3,6 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.font-inter {
+  font-family: "Inter";
+}
+
+.font-noto {
+  font-family: "Noto Sans";
+}
+
 .bg-gradient-light {
   background: linear-gradient(
     268.81deg,
@@ -19,4 +27,34 @@
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+.border-gradient-light-btn {
+  border: 3px solid transparent;
+  border-radius: 7px;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image: linear-gradient(to right, #fff, #fff),
+    linear-gradient(
+      268.81deg,
+      #120720 6.59%,
+      rgba(9, 196, 255, 0.917528) 25.01%,
+      #2456a2 47.56%,
+      #5e388d 70.89%,
+      #3d235f 87.2%,
+      #000000 100.37%
+    );
+}
+
+.bg-gradient-light-btn {
+  background: linear-gradient(
+    268.86deg,
+    #120720 -47%,
+    rgba(9, 196, 255, 0.917528) -7.98%,
+    #2456a2 39.83%,
+    #5e388d 89.26%,
+    #3d235f 123.82%,
+    #000000 151.73%
+  );
+  border-radius: 7px;
 }
