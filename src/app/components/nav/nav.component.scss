@@ -1,0 +1,54 @@
+.nav {
+  background: rgba(255, 255, 255, 0.77);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(9.5px);
+  position: fixed;
+  .logo {
+    margin-right: 20px;
+    img {
+      width: 43px;
+      height: 49px;
+      margin-right: 5px;
+    }
+    .title {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 39px;
+      white-space: nowrap;
+      background: linear-gradient(45deg, #000000 -9.78%, #180924 87.02%);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+  }
+
+  ul {
+    li {
+      cursor: pointer;
+      font-family: "Noto Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      color: #797979;
+      button {
+        border: 3px solid transparent;
+        border-radius: 7px;
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+        background-image: linear-gradient(to right, #fff, #fff),
+          linear-gradient(
+            268.81deg,
+            #120720 6.59%,
+            rgba(9, 196, 255, 0.917528) 25.01%,
+            #2456a2 47.56%,
+            #5e388d 70.89%,
+            #3d235f 87.2%,
+            #000000 100.37%
+          );
+      }
+    }
+  }
+}

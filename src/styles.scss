@@ -2,3 +2,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-gradient-light {
+  background: linear-gradient(
+    268.81deg,
+    #120720 6.59%,
+    rgba(9, 196, 255, 0.917528) 25.01%,
+    #2456a2 47.56%,
+    #5e388d 70.89%,
+    #3d235f 87.2%,
+    #000000 100.37%
+  );
+}
+
+.text-gradient {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
