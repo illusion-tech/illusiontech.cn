@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { NavComponent } from './nav/nav.component';
+import { FooterComponent } from './footer/footer.component';
 
-const COMPONENTS = [
-  NavComponent,
-];
+const COMPONENTS = [NavComponent, FooterComponent];
 
 @NgModule({
   declarations: COMPONENTS,

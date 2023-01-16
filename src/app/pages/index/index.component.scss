@@ -1,3 +1,8 @@
+section {
+  height: calc(100vh - 7rem);
+  max-height: 1080px;
+}
+
 .first-section {
   .purple-text-gradient {
     background: linear-gradient(45deg, #8b58b4 -9.78%, #180924 87.02%);
