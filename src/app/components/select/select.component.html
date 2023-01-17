@@ -1,0 +1,27 @@
+<div
+  class="relative font-noto py-1 px-2 h-16 w-32 border border-black border-opacity-40 rounded-lg cursor-pointer"
+  (click)="toggleSelector()"
+>
+  <span class="text-base">{{ title }}</span>
+  <span class="text-lg block">{{ selected?.label }}</span>
+  <img
+    class="absolute right-3 top-6 transition-transform"
+    [ngClass]="isExpand ? 'rotate-180' : 'rotate-0'"
+    src="assets/drop_arrow.svg"
+  />
+  <div
+    class="absolute left-0 top-16 z-10 bg-footer divide-y divide-gray-100 rounded-lg shadow w-full"
+    [ngClass]="isExpand ? 'block' : 'hidden'"
+  >
+    <ul class="p-1">
+      <li
+        *ngFor="let option of options"
+        class="text-lg px-1 hover:bg-slate-100 rounded"
+        [ngClass]="option === selected ? 'text-sky-500' : ''"
+        (click)="onChange(option)"
+      >
+        {{ option.label }}
+      </li>
+    </ul>
+  </div>
+</div>

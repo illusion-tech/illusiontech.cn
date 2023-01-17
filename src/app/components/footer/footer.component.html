@@ -1,4 +1,4 @@
-<footer class="px-20 py-9">
+<footer class="px-20 py-9 bg-footer">
   <div
     class="flex items-center justify-between pb-4 border-b border-black border-opacity-40"
   >
@@ -9,9 +9,15 @@
       </span>
     </div>
     <div class="flex items-center gap-6 text-xl">
-      <div>主题</div>
+      <app-select
+        [title]="'主题:'"
+        [default]="defaultTheme"
+        [options]="themes"
+        (onSelect)="changeTheme($event)"
+      ></app-select>
       <button
-        class="flex items-center gap-1 px-6 py-4 border border-black border-opacity-40 rounded-full"
+        class="flex items-center gap-1 h-16 px-6 py-4 border border-black border-opacity-40 rounded-full"
+        (click)="backupTop()"
       >
         回到顶部
         <img src="assets/arrow.svg" alt="arrow" />
@@ -29,8 +35,8 @@
     </p>
     <div class="flex items-center justify-between">
       <div>
-        <a href="#" class="mr-3">京ICP备XXXXXXXX号</a>
-        <a href="#">营业执照 XXXXXXXXXXXXXXXXXXXXXXXXXX</a>
+        <a href="#" target="_blank" class="mr-3">京ICP备XXXXXXXX号</a>
+        <a href="#" target="_blank">营业执照 XXXXXXXXXXXXXXXXXXXXXXXXXX</a>
       </div>
       <div class="text-sm">更多联系方式：地址XXXXXXXX，或致电XXXXXXXXX</div>
     </div>
