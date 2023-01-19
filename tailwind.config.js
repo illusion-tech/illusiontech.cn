@@ -4,7 +4,6 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-      backgroundColor: {},
       backgroundImage: {
         "logo-light": "url('/assets/logo/logo_light.png')",
         "logo-dark": "url('/assets/logo/logo_dark.png')",
@@ -29,11 +28,6 @@ module.exports = {
       fontFamily: {
         inter: ["Inter"],
         noto: ["Noto Sans"],
-      },
-      gradientColorStops: {
-        // 紫色渐变
-        "purple-0": "#8b58b4",
-        "purple-1": "#180924",
       },
     },
   },

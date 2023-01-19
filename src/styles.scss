@@ -3,6 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-clip-p-b {
-  background-clip: padding-box, border-box;
+@layer utilities {
+  .bg-clip-p-b {
+    background-clip: padding-box, border-box;
+  }
 }
