@@ -13,10 +13,11 @@ enum Theme {
   styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent implements OnInit {
+  public selectorTitle = $localize`主题:`;
   public themes: ISelect[] = [
-    { label: '白色', value: Theme.Light },
-    { label: '黑色', value: Theme.Dark },
-    { label: '跟随系统', value: Theme.System },
+    { label: $localize`白色`, value: Theme.Light },
+    { label: $localize`黑色`, value: Theme.Dark },
+    { label: $localize`跟随系统`, value: Theme.System },
   ];
   public defaultTheme?: ISelect;
 

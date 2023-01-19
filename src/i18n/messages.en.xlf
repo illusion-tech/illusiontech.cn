@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="zh" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="3088527399094499871" datatype="html">
+        <source>回到顶部</source>
+        <target>Back To Top</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6918704964789050841" datatype="html">
+        <source> Copyright © 2023 Illusion Tech Inc. 北京开源幻境科技有限公司保留所有权利。 </source>
+        <target> Copyright © 2023 Illusion Tech Inc. All rights reserved. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">33,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5859138361840629434" datatype="html">
+        <source>京ICP备XXXXXXXX号</source>
+        <target>京ICP备XXXXXXXX号</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6555048471280373112" datatype="html">
+        <source>营业执照 XXXXXXXXXXXXXXXXXXXXXXXXXX</source>
+        <target>Business license XXXXXXXXXXXXXXXXXXXXXXXXXX</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7251748372377974750" datatype="html">
+        <source> 更多联系方式：地址XXXXXXXX，或致电XXXXXXXXX </source>
+        <target> More contact information: address: XXXXXXXX, tel: XXXXXXXXX </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">41,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8673334263969387446" datatype="html">
+        <source>主题:</source>
+        <target>theme</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1098318880899491536" datatype="html">
+        <source>白色</source>
+        <target>Light</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6261911222121796069" datatype="html">
+        <source>黑色</source>
+        <target>Dark</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5888017095882989807" datatype="html">
+        <source>跟随系统</source>
+        <target>System</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7304804787084703335" datatype="html">
+        <source>首页</source>
+        <target>Index</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/nav/nav.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1412751617776916838" datatype="html">
+        <source>服务</source>
+        <target>Services</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/nav/nav.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8372778509294428736" datatype="html">
+        <source>产品</source>
+        <target>Products</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/nav/nav.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="consult" datatype="html">
+        <source>立刻咨询</source>
+        <target>Consult Immediately</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/nav/nav.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1750373464280630282" datatype="html">
+        <source>开源幻境</source>
+        <target>Illusion Tech</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8944906353041327277" datatype="html">
+        <source> 您的专属软硬件研发工程师 </source>
+        <target> Your exclusive software and hardware R&D engineer </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">9,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7661260054161717102" datatype="html">
+        <source>简单</source>
+        <target>Simple</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4234691183261381755" datatype="html">
+        <source>快速</source>
+        <target>Fast</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="638383534000460088" datatype="html">
+        <source>高效</source>
+        <target>Efficient</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7955518318637133146" datatype="html">
+        <source>省心</source>
+        <target>Save Worry</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8578253522621287303" datatype="html">
+        <source> 开源幻境是一个为您量身定制的编程团队:)<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> 专业研发软硬件，PC程序，手机APP和在线网络平台<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> 程序包含设计的一条龙服务，一切都会以远程的形式完成。 </source>
+        <target> Illusion Tech is a customized programming team for you :)<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Professional development of software and hardware, PC programs, mobile APP and online network platform<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> The program contains designed, and everything will be completed remotely. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">19,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4183658833644607271" datatype="html">
+        <source> 了解服务 </source>
+        <target> Get Services </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">28,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6422254607827727443" datatype="html">
+        <source>技术与语言</source>
+        <target>Technology and Language</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/index/index.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
