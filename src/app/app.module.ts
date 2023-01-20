@@ -7,13 +7,9 @@ import { ComponentsModule } from './components/components.module';
 
 import { IndexComponent } from './pages/index/index.component';
 
-const COMPONENTS = [
-  IndexComponent,
-];
+const COMPONENTS = [IndexComponent];
 
-const MODULES = [
-  ComponentsModule,
-];
+const MODULES = [ComponentsModule];
 
 @NgModule({
   declarations: [
