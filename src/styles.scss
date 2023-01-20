@@ -8,3 +8,12 @@
     background-clip: padding-box, border-box;
   }
 }
+
+@layer components {
+  .bg-flow-light {
+    @apply bg-gradient-light bg-[length:200%] animate-bg-flow;
+  }
+  .bg-flow-dark {
+    @apply bg-gradient-dark bg-[length:300%] animate-bg-flow;
+  }
+}
