@@ -20,7 +20,7 @@ module.exports = {
         "gradient-btn":
           "linear-gradient(268.86deg, #120720 -47%, rgba(9, 196, 255, 0.9) -7.98%, #2456A2 39.83%, #5E388D 89.26%, #3D235F 123.82%, #000000 151.73%)",
         "gradient-btn-outline":
-          "linear-gradient(to right, #fff, #fff), linear-gradient(268.81deg, #120720 6.59%, rgba(9, 196, 255, 0.9) 25.01%, #2456a2 47.56%, #5e388d 70.89%, #3d235f 87.2%, #000000 100.37%)",
+          "linear-gradient(to right, #fff, #fff), linear-gradient(var(--rotate), #120720 0.99%, rgba(9, 196, 255, 0.9) 20.51%, #2456A2 44.43%, #B073FF 64.36%, #3D235F 85.15%, #000 100.41%)",
       },
       borderWidth: {
         3: "3px",
@@ -35,10 +35,16 @@ module.exports = {
           "75%": { "background-position": "75% 0" },
           "100%": { "background-position": "0 0" },
         },
+        "bg-rotate": {
+          "0%": { "--rotate": "268deg" },
+          "100%": { "--rotate": "-92deg" },
+        },
       },
       animation: {
         // 背景流动动画
         "bg-flow": "bg-position 3s linear infinite",
+        // 背景旋转动画
+        "bg-rotate": "bg-rotate 4s linear infinite",
       },
     },
   },

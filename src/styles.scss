@@ -3,6 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@property --rotate {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 268deg;
+}
+
 @layer utilities {
   .bg-clip-p-b {
     background-clip: padding-box, border-box;
