@@ -3,10 +3,10 @@
   class="pt-48 text-center font-noto text-zinc-600 dark:bg-black dark:text-white"
 >
   <h1 class="flex justify-center font-black text-8xl">
-    <span class="pt-2 bg-flow-light bg-clip-text text-transparent dark:bg-flow-dark" i18n>开源幻境</span>
+    <span class="pt-2 bg-flow-light bg-text dark:bg-flow-dark" i18n>开源幻境</span>
   </h1>
   <h3 class="font-medium text-6xl inline-block mt-3">
-    <span class="bg-gradient-purple bg-clip-text text-transparent dark:!text-white" i18n>
+    <span class="bg-gradient-purple bg-text dark:!text-white" i18n>
       您的专属软硬件研发工程师
     </span>
   </h3>
@@ -24,21 +24,21 @@
   <div class="flex gap-8 justify-center mt-9 text-2xl">
     <button
       i18n
-      class="px-6 py-2 bg-gradient-purple bg-clip-text text-transparent dark:!text-white"
+      class="button bg-gradient-purple bg-text dark:!text-white"
     >
       了解服务
     </button>
-    <button class="group px-6 py-2 rounded-lg border-3 border-solid border-transparent
+    <button class="group button border-3 border-transparent
       bg-gradient-btn-outline bg-clip-p-b hover:animate-bg-rotate dark:bg-gradient-btn"
     >
-      <span class="bg-gradient-purple bg-clip-text text-transparent group-hover:bg-flow-light dark:!text-white" i18n="@@consult">立刻咨询</span>
+      <span class="bg-gradient-purple bg-text group-hover:bg-flow-light dark:!text-white" i18n="@@consult">立刻咨询</span>
     </button>
   </div>
   <h6 class="font-inter mt-20" i18n>技术与语言</h6>
   <ul class="flex gap-16 justify-center mt-8 font-inter font-black text-4xl">
     <li
       *ngFor="let lang of langurage"
-      class="bg-gradient-purple bg-clip-text text-transparent dark:!text-white"
+      class="bg-gradient-purple bg-text dark:!text-white"
     >
       {{ lang }}
     </li>

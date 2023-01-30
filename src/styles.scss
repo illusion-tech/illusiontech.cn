@@ -16,10 +16,23 @@
 }
 
 @layer components {
+  // 背景流动动画
   .bg-flow-light {
+    // 亮色主题
     @apply bg-gradient-light bg-[length:200%] animate-bg-flow;
   }
   .bg-flow-dark {
+    // 暗色主题
     @apply bg-gradient-dark bg-[length:300%] animate-bg-flow;
+  }
+
+  // 文字背景
+  .bg-text {
+    @apply bg-clip-text text-transparent;
+  }
+
+  // 按钮基本样式
+  .button {
+    @apply px-6 py-2 rounded-lg border-solid;
   }
 }
