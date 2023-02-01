@@ -1,22 +1,30 @@
 <div
-  class="relative font-noto py-1 px-2 h-16 w-32 border border-black border-opacity-40 rounded-lg cursor-pointer"
+  class="relative font-noto py-1 px-2 h-16 w-32 border border-black/40 rounded-lg cursor-pointer dark:border-white/60"
   (click)="toggleSelector()"
 >
   <span class="text-base">{{ title }}</span>
   <span class="text-lg block">{{ selected?.label }}</span>
-  <img
-    class="absolute right-3 top-6 transition-transform"
+  <svg
+    class="absolute right-3 top-6 transition-transform fill-black dark:fill-white"
     [ngClass]="isExpand ? 'rotate-180' : 'rotate-0'"
-    src="assets/drop_arrow.svg"
-  />
+    width="19"
+    height="17"
+    viewBox="0 0 19 17"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M11.2321 16C10.4623 17.3333 8.53775 17.3333 7.76795 16L0.406734 3.25C-0.363066 1.91667 0.599184 0.25 2.13878 0.25L16.8612 0.25C18.4008 0.25 19.3631 1.91667 18.5933 3.25L11.2321 16Z"
+    />
+  </svg>
   <div
-    class="absolute left-0 top-16 z-10 bg-gray-100 divide-y divide-gray-100 rounded-lg shadow w-full"
+    class="absolute left-0 top-16 z-10 rounded-lg shadow w-full bg-gray-100 divide-y divide-gray-100 dark:bg-gray-700"
     [ngClass]="isExpand ? 'block' : 'hidden'"
   >
     <ul class="p-1">
       <li
         *ngFor="let option of options"
-        class="text-lg px-1 hover:bg-slate-100 rounded"
+        class="text-lg px-1 hover:bg-gray-200 rounded dark:hover:bg-gray-800"
         [ngClass]="option === selected ? 'text-sky-500' : ''"
         (click)="onChange(option)"
       >
