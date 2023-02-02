@@ -16,6 +16,25 @@
 }
 
 @layer components {
+  .flex-center {
+    @apply flex items-center justify-items-center;
+  }
+  // logo 字样
+  .logo-text {
+    @apply whitespace-nowrap font-inter font-black;
+  }
+
+  // logo 图片尺寸
+  .logo-sm {
+    @apply w-[33px] h-[38px];
+  }
+  .logo-md {
+    @apply w-[43px] h-[49px];
+  }
+  .logo-lg {
+    @apply w-[64px] h-[73px];
+  }
+
   // 按钮基本样式
   .button {
     @apply px-6 py-2 rounded-lg border-solid;

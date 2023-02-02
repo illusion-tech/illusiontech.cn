@@ -1,30 +1,31 @@
+<!-- prettier-ignore -->
 <div
-  class="relative font-noto py-1 px-2 h-16 w-32 border border-black/40 rounded-lg cursor-pointer dark:border-white/60"
+  class="relative font-noto py-1 px-2 h-16 w-32 border border-black/40 rounded-lg cursor-pointer dark:border-white/60
+    max-sm:h-auto max-sm:w-auto max-sm:p-3 max-sm:flex-center"
   (click)="toggleSelector()"
 >
-  <span class="text-base">{{ title }}</span>
-  <span class="text-lg block">{{ selected?.label }}</span>
+  <span class="text-base max-sm:hidden">{{ title }}</span>
+  <span class="text-lg block max-sm:hidden">{{ selected?.label }}</span>
   <svg
-    class="absolute right-3 top-6 transition-transform fill-black dark:fill-white"
+    class="absolute right-3 top-6 transition-transform fill-black dark:fill-white max-sm:static"
     [ngClass]="isExpand ? 'rotate-180' : 'rotate-0'"
-    width="19"
-    height="17"
-    viewBox="0 0 19 17"
+    width="18"
+    height="15"
+    viewBox="0 0 18 15"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path
-      d="M11.2321 16C10.4623 17.3333 8.53775 17.3333 7.76795 16L0.406734 3.25C-0.363066 1.91667 0.599184 0.25 2.13878 0.25L16.8612 0.25C18.4008 0.25 19.3631 1.91667 18.5933 3.25L11.2321 16Z"
-    />
+  <path d="M11.5981 13.5C10.4434 15.5 7.55662 15.5 6.40192 13.5L1.20577 4.5C0.0510714 2.5 1.49445 0 3.80385 0L14.1962 0C16.5056 0 17.9489 2.5 16.7942 4.5L11.5981 13.5Z"/>
   </svg>
   <div
-    class="absolute left-0 top-16 z-10 rounded-lg shadow w-full bg-gray-100 divide-y divide-gray-100 dark:bg-gray-700"
+    class="absolute left-0 top-16 z-10 rounded-lg shadow w-full bg-gray-100 divide-y divide-gray-100 dark:bg-gray-800
+      max-sm:w-32 max-sm:left-auto max-sm:top-11 max-sm:right-0"
     [ngClass]="isExpand ? 'block' : 'hidden'"
   >
     <ul class="p-1">
       <li
         *ngFor="let option of options"
-        class="text-lg px-1 hover:bg-gray-200 rounded dark:hover:bg-gray-800"
+        class="text-lg px-1 hover:bg-gray-200 rounded dark:hover:bg-gray-900"
         [ngClass]="option === selected ? 'text-sky-500' : ''"
         (click)="onChange(option)"
       >

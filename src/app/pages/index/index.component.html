@@ -1,27 +1,27 @@
 <!-- prettier-ignore -->
 <section
-  class="pt-48 text-center font-noto text-zinc-600 dark:bg-black dark:text-white"
+  class="pt-48 text-center font-noto text-zinc-600 dark:bg-black dark:text-white max-sm:pt-20"
 >
-  <h1 class="flex justify-center font-black text-8xl">
+  <h1 class="flex justify-center font-black text-8xl max-sm:text-6xl">
     <span class="pt-2 bg-flow bg-text" i18n>开源幻境</span>
   </h1>
-  <h3 class="font-medium text-6xl inline-block mt-3">
+  <h3 class="font-medium text-6xl inline-block mt-3 max-sm:text-3xl">
     <span class="bg-gradient-purple bg-text dark:!text-white" i18n>
       您的专属软硬件研发工程师
     </span>
   </h3>
-  <ul class="flex gap-4 justify-center font-extrabold text-2xl mt-14">
+  <ul class="flex gap-4 justify-center font-extrabold text-2xl mt-14 max-sm:text-xl max-sm:mt-10">
     <li i18n>简单</li>
     <li i18n>快速</li>
     <li i18n>高效</li>
     <li i18n>省心</li>
   </ul>
-  <p class="text-2xl mt-4" i18n>
+  <p class="text-2xl mt-4 px-4 max-sm:text-xl" i18n>
     开源幻境是一个为您量身定制的编程团队:)<br />
     专业研发软硬件，PC程序，手机APP和在线网络平台<br />
-    程序包含设计的一条龙服务，一切都会以远程的形式完成。
+    程序包含设计的一条龙服务，一切都会以远程的形式完成
   </p>
-  <div class="flex gap-8 justify-center mt-9 text-2xl">
+  <div class="flex gap-8 justify-center mt-8 text-2xl">
     <button
       i18n
       class="button bg-gradient-purple bg-text dark:!text-white"
@@ -34,8 +34,8 @@
       <span class="bg-gradient-purple bg-text group-hover:bg-flow dark:!text-white" i18n="@@consult">立刻咨询</span>
     </button>
   </div>
-  <h6 class="font-inter mt-20" i18n>技术与语言</h6>
-  <ul class="flex gap-16 justify-center mt-8 font-inter font-black text-4xl">
+  <h6 class="font-inter mt-20 max-sm:mt-8" i18n>技术与语言</h6>
+  <ul class="flex gap-16 justify-center mt-8 px-4 flex-wrap font-inter font-black text-4xl max-sm:gap-6 max-sm:text-2xl">
     <li
       *ngFor="let lang of langurage"
       class="bg-gradient-purple bg-text dark:!text-white"
@@ -45,6 +45,10 @@
   </ul>
 </section>
 
-<section class="overflow-hidden dark:bg-black">
-  <div class="lattice w-full h-full text-white bg-lattic dark:text-black"></div>
+<section class="dark:bg-black">
+  <div class="h-[50rem] max-sm:w-screen max-sm:h-[80vh]">
+    <div
+      class="lattice w-full h-full text-white bg-lattic dark:text-black"
+    ></div>
+  </div>
 </section>

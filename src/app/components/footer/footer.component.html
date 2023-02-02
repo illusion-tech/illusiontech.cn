@@ -1,16 +1,13 @@
-<footer class="px-20 py-9 bg-gray-100 dark:bg-black dark:text-white">
+<!-- prettier-ignore -->
+<footer class="px-20 py-9 bg-gray-100 dark:bg-black dark:text-white max-sm:p-6">
   <div
-    class="flex items-center justify-between pb-4 border-b border-black/40 dark:border-white/40"
+    class="flex items-center justify-between gap-2 pb-4 border-b border-black/40 dark:border-white/40"
   >
     <div class="flex items-center select-none">
-      <div class="logo bg-cover bg-logo-gray"></div>
-      <span
-        class="font-inter font-black text-5xl text-black/50 dark:text-white"
-      >
-        Illusion Tech
-      </span>
+      <div class="logo-lg bg-cover bg-logo-gray mr-1 max-sm:logo-sm"></div>
+      <span class="logo-text text-5xl text-black/50 dark:text-white max-sm:text-3xl">Illusion Tech</span>
     </div>
-    <div class="flex items-center gap-6 text-xl">
+    <div class="flex items-center gap-6 text-xl max-sm:gap-2">
       <app-select
         [title]="selectorTitle"
         [default]="defaultTheme"
@@ -18,10 +15,11 @@
         (onSelect)="changeTheme($event)"
       ></app-select>
       <button
-        class="flex items-center gap-1 h-16 px-6 py-4 border border-black/40 rounded-full dark:border-white/60"
+        class="flex items-center gap-1 h-16 px-6 py-4 border border-black/40 rounded-full dark:border-white/60
+          max-sm:h-auto max-sm:p-3"
         (click)="backupTop()"
       >
-        <span i18n>回到顶部</span>
+        <span class="max-sm:hidden" i18n>回到顶部</span>
         <svg
           class="fill-black dark:fill-white"
           width="16"
@@ -41,18 +39,18 @@
     <!-- TODO -->
   </section>
   <div
-    class="font-noto text-base text-gray-500 pt-4 border-t border-black/40 dark:border-white/40"
+    class="font-noto text-base text-gray-500 pt-4 border-t border-black/40 dark:border-white/40 max-sm:text-xs"
   >
     <p i18n>
-      Copyright © 2023 Illusion Tech Inc. 北京开源幻境科技有限公司保留所有权利。
+      Copyright © 2023 Illusion Tech Inc. 保留所有权利。
     </p>
-    <div class="flex items-center justify-between">
+    <div class="flex items-center justify-between max-sm:flex-col max-sm:items-start max-sm:pt-1 max-sm:gap-1">
       <div>
         <a href="#" target="_blank" class="mr-3" i18n>京ICP备XXXXXXXX号</a>
-        <a href="#" target="_blank" i18n>营业执照 XXXXXXXXXXXXXXXXXXXXXXXXXX</a>
+        <a href="#" target="_blank" i18n>营业执照 91110114MA7HR2LNX9</a>
       </div>
-      <div class="text-sm" i18n>
-        更多联系方式：地址XXXXXXXX，或致电XXXXXXXXX
+      <div class="text-sm max-sm:text-xs" i18n>
+        更多联系方式：北京市海淀区中关村大街18号14层1621-3，或致电 17600312293
       </div>
     </div>
   </div>
