@@ -7,19 +7,31 @@
     <div class="logo-md mr-1 bg-cover bg-logo-light dark:bg-logo-dark max-sm:logo-sm"></div>
     <span class="logo-text text-4xl dark:text-white max-sm:text-3xl">Illusion Tech</span>
   </div>
-  <ul
+  <div
     class="flex flex-auto max-w-xl items-center justify-between text-2xl font-noto text-gray-500 dark:text-white max-sm:hidden"
   >
-    <li class="cursor-pointer" i18n>首页</li>
-    <li class="cursor-pointer" i18n>服务</li>
-    <li class="cursor-pointer" i18n>产品</li>
-    <li>
+    <a [routerLink]="['/']" i18n="@@consult">首页</a>
+    <a [routerLink]="['/services']" i18n="@@consult">服务</a>
+    <a [routerLink]="['/products']" i18n="@@consult">产品</a>
+    <a>
       <button class="group button border-3 border-transparent
         bg-gradient-btn-outline bg-clip-p-b hover:animate-bg-rotate dark:bg-gradient-btn"
       >
         <span class="bg-gradient-purple bg-text group-hover:bg-flow dark:!text-white" i18n="@@consult">立刻咨询</span>
       </button>
-    </li>
-  </ul>
+    </a>
+  </div>
+  <div class="peer group menu hidden z-10 w-6 h-5 max-sm:block transition hover:-translate-x-20">
+    <div class="w-full h-1 bg-black rounded dark:bg-white group-hover:rotate-45 group-hover:translate-x-[4px] group-hover:translate-y-[8px]"></div>
+    <div class="w-full h-1 my-1 bg-black rounded dark:bg-white group-hover:opacity-0"></div>
+    <div class="w-full h-1 bg-black rounded dark:bg-white group-hover:-rotate-45 group-hover:translate-x-[4px] group-hover:-translate-y-[8px]"></div>
+  </div>
+  <div class="absolute right-0 top-0 w-40 bg-white dark:bg-gray-900 rounded-lg rounded-t-none rounded-r-none shadow-md translate-x-40 transition peer-hover:translate-x-0">
+    <div class="p-7 pl-20 text-xl dark:text-white">
+      <a [routerLink]="['/']" class="block" i18n="@@consult">首页</a>
+      <a [routerLink]="['/services']" class="block my-2" i18n="@@consult">服务</a>
+      <a [routerLink]="['/products']" class="block" i18n="@@consult">产品</a>
+    </div>
+  </div>
 </nav>
-<div class="w-full h-28 dark:bg-black"></div>
+<div class="w-full h-28 max-sm:h-20 dark:bg-black"></div>
