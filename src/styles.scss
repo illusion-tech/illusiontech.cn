@@ -13,11 +13,17 @@
   .bg-clip-p-b {
     background-clip: padding-box, border-box;
   }
+  .pers-pc {
+    perspective: 50rem;
+  }
+  .pers-mobile {
+    perspective: 40rem;
+  }
 }
 
 @layer components {
   .flex-center {
-    @apply flex items-center justify-items-center;
+    @apply flex items-center justify-center;
   }
   // logo 字样
   .logo-text {
