@@ -6,7 +6,7 @@
 @property --rotate {
   syntax: "<angle>";
   inherits: false;
-  initial-value: 268deg;
+  initial-value: 276deg;
 }
 
 @layer utilities {
@@ -43,7 +43,7 @@
 
   // 按钮基本样式
   .button {
-    @apply px-6 py-2 rounded-lg border-solid;
+    @apply px-6 py-2 rounded-md border-solid;
   }
 
   // 文字背景
@@ -53,7 +53,10 @@
 
   // 背景流动动画
   .bg-flow {
-    @apply bg-gradient-light bg-[length:200%] animate-bg-translateX dark:bg-gradient-dark dark:bg-[length:300%];
+    @apply bg-gradient-light bg-[length:200%] animate-bg-translateX-delay dark:bg-gradient-dark dark:bg-[length:300%];
+  }
+  .bg-flow-dark {
+    @apply bg-[length:200%] animate-bg-translateX;
   }
 
   // 点阵背景

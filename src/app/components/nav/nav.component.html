@@ -14,11 +14,12 @@
     <a [routerLink]="['/services']" i18n="@@consult">服务</a>
     <a [routerLink]="['/products']" i18n="@@consult">产品</a>
     <a>
-      <button class="group button border-3 border-transparent
-        bg-gradient-btn-outline bg-clip-p-b hover:animate-bg-rotate dark:bg-gradient-btn"
-      >
-        <span class="bg-gradient-purple bg-text group-hover:bg-flow dark:!text-white" i18n="@@consult">立刻咨询</span>
-      </button>
+      <div class="p-[3px] rounded-lg bg-gradient-btn-outline hover:bg-gradient-btn-outline-hover hover:animate-bg-rotate
+        dark:bg-gradient-btn dark:hover:bg-flow-dark">
+        <button class="group button bg-white focus:bg-gradient-btn-outline-focus dark:bg-transparent dark:focus:bg-none">
+          <span class="bg-gradient-purple bg-text group-hover:bg-flow dark:!text-white" i18n="@@consult">立刻咨询</span>
+        </button>
+      </div>
     </a>
   </div>
   <div class="peer group menu hidden z-10 w-6 h-5 max-sm:block transition hover:-translate-x-20">

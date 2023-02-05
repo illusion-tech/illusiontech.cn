@@ -18,9 +18,13 @@ module.exports = {
         "gradient-purple":
           "linear-gradient(45deg, #8B58B4 -9.78%, #180924 87.02%)",
         "gradient-btn":
-          "linear-gradient(268.86deg, #120720 -47%, rgba(9, 196, 255, 0.9) -7.98%, #2456A2 39.83%, #5E388D 89.26%, #3D235F 123.82%, #000000 151.73%)",
+          "linear-gradient(268.86deg, rgba(9, 196, 255, 0.9) -7.98%, #2456A2 39.83%, #5E388D 89.26%, #3D235F 123.82%)",
         "gradient-btn-outline":
-          "linear-gradient(to right, #fff, #fff), linear-gradient(var(--rotate), #120720 0.99%, rgba(9, 196, 255, 0.9) 20.51%, #2456A2 44.43%, #B073FF 64.36%, #3D235F 85.15%, #000 100.41%)",
+          "linear-gradient(268.86deg, #120720 0.99%, rgba(9, 196, 255, 0.9) 20.51%, #2456A2 44.43%, #B073FF 64.36%, #3D235F 85.15%, #000 100.41%)",
+        "gradient-btn-outline-hover":
+          "linear-gradient(var(--rotate), rgba(9, 196, 255, 0.9) -5.58%, #2456A2 36.65%, #B073FF 71.85%, #3D235F 108.55%)",
+        "gradient-btn-outline-focus":
+          "linear-gradient(100.69deg, rgba(154, 249, 255, 0.21) 17.93%, rgba(114, 71, 235, 0.2058) 92.33%)",
         // 亮色圆点背景
         "dot-light":
           "radial-gradient(rgba(0, 0, 0, 0.3) 20%, transparent 0.5rem)",
@@ -37,18 +41,23 @@ module.exports = {
       },
       keyframes: {
         "bg-translateX": {
+          "0%": { "background-position": "100% 0" },
+          "100%": { "background-position": "0 0" },
+        },
+        "bg-translateX-delay": {
           "0%,50%": { "background-position": "150% 0" },
           "75%": { "background-position": "75% 0" },
           "100%": { "background-position": "0 0" },
         },
         rotate: {
-          "0%": { "--rotate": "268deg" },
-          "100%": { "--rotate": "-92deg" },
+          "0%": { "--rotate": "0deg" },
+          "100%": { "--rotate": "360deg" },
         },
       },
       animation: {
         // 背景流动动画
-        "bg-translateX": "bg-translateX 3s linear infinite",
+        "bg-translateX": "bg-translateX 2s linear infinite alternate",
+        "bg-translateX-delay": "bg-translateX-delay 3s linear infinite",
         // 背景旋转动画
         "bg-rotate": "rotate 4s linear infinite",
       },

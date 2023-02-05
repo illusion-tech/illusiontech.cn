@@ -28,11 +28,12 @@
     >
       了解服务
     </button>
-    <button class="group button border-3 border-transparent
-      bg-gradient-btn-outline bg-clip-p-b hover:animate-bg-rotate dark:bg-gradient-btn"
-    >
-      <span class="bg-gradient-purple bg-text group-hover:bg-flow dark:!text-white" i18n="@@consult">立刻咨询</span>
-    </button>
+    <div class="p-[3px] rounded-lg bg-gradient-btn-outline hover:bg-gradient-btn-outline-hover hover:animate-bg-rotate
+      dark:bg-gradient-btn dark:hover:bg-flow-dark">
+      <button class="group button bg-white focus:bg-gradient-btn-outline-focus dark:bg-transparent dark:focus:bg-none">
+        <span class="bg-gradient-purple bg-text group-hover:bg-flow dark:!text-white" i18n="@@consult">立刻咨询</span>
+      </button>
+    </div>
   </div>
   <h6 class="font-inter mt-20 max-sm:mt-8" i18n>技术与语言</h6>
   <ul class="flex gap-16 justify-center mt-8 px-4 flex-wrap font-inter font-black text-4xl max-sm:gap-6 max-sm:text-2xl">
