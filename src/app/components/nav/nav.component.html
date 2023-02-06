@@ -22,17 +22,31 @@
       </div>
     </a>
   </div>
-  <div class="peer group menu hidden z-10 w-6 h-5 max-sm:block transition hover:-translate-x-20">
-    <div class="w-full h-1 bg-black rounded dark:bg-white group-hover:rotate-45 group-hover:translate-x-[4px] group-hover:translate-y-[8px]"></div>
-    <div class="w-full h-1 my-1 bg-black rounded dark:bg-white group-hover:opacity-0"></div>
-    <div class="w-full h-1 bg-black rounded dark:bg-white group-hover:-rotate-45 group-hover:translate-x-[4px] group-hover:-translate-y-[8px]"></div>
+  <div
+    (click)="toggleMenu($event)"
+    [ngClass]="menuExpand ? '-translate-x-20' : ''"
+    class="menu hidden z-10 w-6 h-5 max-sm:block transition"
+  >
+    <div
+      [ngClass]="menuExpand ? 'rotate-45 translate-x-[4px] translate-y-[8px]' : ''"
+      class="w-full h-1 bg-black rounded dark:bg-white"
+    ></div>
+    <div
+      [ngClass]="menuExpand ? 'opacity-0' : ''"
+      class="w-full h-1 my-1 bg-black rounded dark:bg-white"
+    ></div>
+    <div
+      [ngClass]="menuExpand ? '-rotate-45 translate-x-[4px] -translate-y-[8px]' : ''"
+      class="w-full h-1 bg-black rounded dark:bg-white"
+    ></div>
   </div>
-  <div class="absolute right-0 top-0 w-40 bg-white dark:bg-gray-900 rounded-lg rounded-t-none rounded-r-none shadow-md translate-x-40 transition peer-hover:translate-x-0">
-    <div class="p-7 pl-20 text-xl dark:text-white">
-      <a [routerLink]="['/']" class="block" i18n="@@consult">首页</a>
-      <a [routerLink]="['/services']" class="block my-2" i18n="@@consult">服务</a>
-      <a [routerLink]="['/products']" class="block" i18n="@@consult">产品</a>
-    </div>
+  <div
+    [ngClass]="menuExpand ? '!translate-x-0' : ''"
+    class="panel absolute right-0 top-0 w-40 bg-white p-7 pl-20 text-xl dark:text-white dark:bg-gray-900 rounded-lg rounded-t-none rounded-r-none shadow-md translate-x-40 transition"
+  >
+    <a [routerLink]="['/']" class="block" i18n="@@consult">首页</a>
+    <a [routerLink]="['/services']" class="block my-2" i18n="@@consult">服务</a>
+    <a [routerLink]="['/products']" class="block" i18n="@@consult">产品</a>
   </div>
 </nav>
 <div class="w-full h-28 max-sm:h-20 dark:bg-black"></div>

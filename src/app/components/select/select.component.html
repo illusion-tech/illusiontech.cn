@@ -2,7 +2,7 @@
 <div
   class="relative font-noto py-1 px-2 h-16 w-32 border border-black/40 rounded-lg cursor-pointer dark:border-white/60
     max-sm:h-auto max-sm:w-auto max-sm:p-3 max-sm:flex-center"
-  (click)="toggleSelector()"
+  (click)="toggleSelector($event)"
 >
   <span class="text-base max-sm:hidden">{{ title }}</span>
   <span class="text-lg block max-sm:hidden">{{ selected?.label }}</span>
@@ -25,9 +25,9 @@
     <ul class="p-1">
       <li
         *ngFor="let option of options"
-        class="text-lg px-1 hover:bg-gray-200 rounded dark:hover:bg-gray-900"
+        class="option text-lg px-1 hover:bg-gray-200 rounded dark:hover:bg-gray-900"
         [ngClass]="option === selected ? 'text-sky-500' : ''"
-        (click)="onChange(option)"
+        (click)="onChange($event, option)"
       >
         {{ option.label }}
       </li>

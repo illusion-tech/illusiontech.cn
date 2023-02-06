@@ -19,15 +19,23 @@ export class SelectComponent implements OnInit {
   public selected?: ISelect;
   // 选项是否展开
   public isExpand = false;
+  #handler = (event: MouseEvent) => {
+    const target = event.target as HTMLElement;
+    if (!target.className.includes('option')) this.toggleSelector(event);
+  };
 
   constructor() {}
 
-  // TODO: 优化实现
-  public toggleSelector(): void {
+  public toggleSelector($event: Event): void {
+    $event.stopPropagation();
     this.isExpand = !this.isExpand;
+    this.isExpand
+      ? document.addEventListener('click', this.#handler, false)
+      : document.removeEventListener('click', this.#handler, false);
   }
 
-  public onChange(option: ISelect): void {
+  public onChange($event: Event, option: ISelect): void {
+    $event.stopPropagation();
     this.selected = option;
     this.onSelect.emit(option);
   }
