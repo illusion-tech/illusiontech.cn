@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./index.component.scss'],
 })
 export class IndexComponent {
-  public langurage = ['C++', 'JAVA', 'HTML', 'EXAMPLE', '···'];
+  public langurage = ['C++', 'JAVA', 'HTML', 'RUST', '···'];
 }
