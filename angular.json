@@ -20,7 +20,7 @@
         }
       },
       "architect": {
-        "build": {
+        "build-es": {
           "builder": "@angular-devkit/build-angular:browser-esbuild",
           "options": {
             "outputPath": "dist/illusion-tech",
@@ -28,7 +28,58 @@
             "main": "src/main.ts",
             "polyfills": [
               "zone.js",
-              "src/polyfills.ts"
+              "src/polyfills"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            },
+            "en": {
+              "localize": ["en"]
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/illusion-tech",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": [
+              "zone.js",
+              "src/polyfills"
             ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
@@ -78,7 +129,7 @@
               "browserTarget": "illusion-tech:build:production"
             },
             "development": {
-              "browserTarget": "illusion-tech:build:development"
+              "browserTarget": "illusion-tech:build-es:development"
             },
             "en": {
               "browserTarget": "illusion-tech:build:development,en"
