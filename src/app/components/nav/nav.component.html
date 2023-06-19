@@ -42,7 +42,7 @@
   </div>
   <div
     [ngClass]="menuExpand ? '!translate-x-0' : ''"
-    class="panel absolute right-0 top-0 w-40 bg-white p-7 pl-20 text-xl dark:text-white dark:bg-gray-900 rounded-lg rounded-t-none rounded-r-none shadow-md translate-x-40 transition"
+    class="panel absolute right-0 top-0 w-40 bg-white p-7 pl-20 text-xl dark:text-white dark:bg-gray-900 rounded-lg rounded-t-none rounded-r-none shadow-md translate-x-40 transition hidden max-sm:block"
   >
     <a [routerLink]="['/']" class="block" i18n="@@consult">首页</a>
     <a [routerLink]="['/services']" class="block my-2" i18n="@@consult">服务</a>
